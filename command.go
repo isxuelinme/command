@@ -56,8 +56,8 @@ func Execute(args []string) {
 		command = "version"
 	}
 
-	commmandLinked := strings.Join(os.Args[1:], " ")
-	log.Printf("Your input args is: %s\n", commmandLinked)
+	commandLinked := strings.Join(os.Args[1:], " ")
+	log.Printf("Your input args is: %s\n", commandLinked)
 
 	var commandInstance *Command
 	for commandName, _ := range commands {
